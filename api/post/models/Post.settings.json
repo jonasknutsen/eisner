@@ -1,0 +1,54 @@
+{
+  "connection": "default",
+  "collectionName": "post",
+  "info": {
+    "name": "post",
+    "description": "Your average post"
+  },
+  "options": {
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "attributes": {
+    "title": {
+      "required": true,
+      "unique": true,
+      "type": "string"
+    },
+    "text": {
+      "required": true,
+      "type": "text"
+    },
+    "edition": {
+      "type": "string"
+    },
+    "publisher": {
+      "type": "string"
+    },
+    "year": {
+      "type": "integer"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "caterory": {
+      "model": "caterory",
+      "via": "posts"
+    },
+    "date": {
+      "type": "date"
+    },
+    "creators": {
+      "collection": "creator",
+      "dominant": true,
+      "via": "posts"
+    },
+    "figures": {
+      "collection": "figure",
+      "dominant": true,
+      "via": "posts"
+    }
+  }
+}

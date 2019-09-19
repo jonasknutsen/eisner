@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/caterories",
+      "handler": "Caterory.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/caterories/count",
+      "handler": "Caterory.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/caterories/:_id",
+      "handler": "Caterory.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/caterories",
+      "handler": "Caterory.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/caterories/:_id",
+      "handler": "Caterory.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/caterories/:_id",
+      "handler": "Caterory.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "connection": "default",
+  "collectionName": "creator",
+  "info": {
+    "name": "creator",
+    "description": "Writer/cartonist"
+  },
+  "options": {
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "posts": {
+      "collection": "post",
+      "via": "creators"
+    }
+  }
+}
