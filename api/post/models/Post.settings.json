@@ -19,7 +19,7 @@
     },
     "text": {
       "required": true,
-      "type": "text"
+      "type": "richtext"
     },
     "edition": {
       "type": "string"
