@@ -1,14 +1,18 @@
 {
-  "host": "localhost",
-  "port": "${process.env.PORT || 1337}",
+  "host": "eisner.tegneseriebloggen.no",
+  "port": 1337,
+  "autoReload": {
+    "enabled": false
+  },
+  "admin": {
+    "path": "/dashboard",
+    "autoOpen": false
+  },
   "production": true,
   "proxy": {
     "enabled": false
   },
   "cron": {
     "enabled": false
-  },
-  "admin": {
-    "autoOpen": false
   }
 }
