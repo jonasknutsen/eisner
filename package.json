@@ -18,7 +18,7 @@
     "eslint-plugin-react": "^7.16.0"
   },
   "dependencies": {
-    "lodash": "^4.17.5",
+    "lodash": "^4.17.23",
     "strapi": "^3.0.0-beta.17.2",
     "strapi-admin": "^3.0.0-beta.17.2",
     "strapi-hook-mongoose": "^3.0.0-beta.17.2",
